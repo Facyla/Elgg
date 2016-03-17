@@ -268,10 +268,12 @@ class NotificationsService {
 			return false;
 		}
 
+		/*
 		// don't notify the creator of the content
 		if ($recipient->getGUID() == $event->getActorGUID()) {
 			return false;
 		}
+		*/
 
 		$actor = $event->getActor();
 		$object = $event->getObject();
